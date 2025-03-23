@@ -1,5 +1,7 @@
 package com.dy.board.service;
 
+import com.dy.board.dto.CardDetailsDTO;
+import com.dy.board.persistence.dao.CardDAO;
 import lombok.AllArgsConstructor;
 
 import java.sql.Connection;

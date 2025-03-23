@@ -1,5 +1,7 @@
 package com.dy.board.service;
 
+import com.dy.board.dto.BoardColumnInfoDTO;
+import com.dy.board.persistence.dao.BlockDAO;
 import com.dy.board.persistence.dao.CardDAO;
 import com.dy.board.persistence.entity.CardEntity;
 import lombok.AllArgsConstructor;
@@ -7,6 +9,9 @@ import lombok.AllArgsConstructor;
 import java.sql.Connection;
 import java.sql.SQLException;
 import java.util.List;
+
+import static com.dy.board.persistence.entity.BoardColumnKindEnum.CANCEL;
+import static com.dy.board.persistence.entity.BoardColumnKindEnum.FINAL;
 
 @AllArgsConstructor
 public class CardService {

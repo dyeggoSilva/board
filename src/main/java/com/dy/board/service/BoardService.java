@@ -1,5 +1,6 @@
 package com.dy.board.service;
 
+import com.dy.board.persistence.dao.BoardColumnDAO;
 import com.dy.board.persistence.dao.BoardDAO;
 import com.dy.board.persistence.entity.BoardEntity;
 import lombok.AllArgsConstructor;

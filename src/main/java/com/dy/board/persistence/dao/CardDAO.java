@@ -1,5 +1,6 @@
 package com.dy.board.persistence.dao;
 
+import com.dy.board.dto.CardDetailsDTO;
 import com.dy.board.persistence.entity.CardEntity;
 import com.mysql.cj.jdbc.StatementImpl;
 import lombok.AllArgsConstructor;
@@ -9,6 +10,8 @@ import java.sql.SQLException;
 import java.util.Optional;
 
 import static java.util.Objects.nonNull;
+import static org.apache.commons.lang3.time.CalendarUtils.toOffsetDateTime;
+
 @AllArgsConstructor
 public class CardDAO {
     private Connection connection;

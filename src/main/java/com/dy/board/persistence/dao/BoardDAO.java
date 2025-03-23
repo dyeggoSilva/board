@@ -10,6 +10,9 @@ import java.util.Optional;
 public class BoardDAO {
     private Connection connection;
 
+    public BoardDAO(Connection connection) {
+    }
+
     public BoardEntity insert(final BoardEntity entity) throws SQLException {
         var sql = "INSERT INTO BOARDS (name) values (?);";
         try(var statement = connection.prepareStatement(sql)){

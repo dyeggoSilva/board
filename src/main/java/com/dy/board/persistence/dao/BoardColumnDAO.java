@@ -1,18 +1,24 @@
 package com.dy.board.persistence.dao;
 
+import com.dy.board.dto.BoardColumnDTO;
 import com.dy.board.persistence.entity.BoardColumnEntity;
+import com.dy.board.persistence.entity.CardEntity;
 import com.mysql.cj.jdbc.StatementImpl;
 import lombok.RequiredArgsConstructor;
 
+import java.sql.Connection;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
+import static com.dy.board.persistence.entity.BoardColumnKindEnum.findByName;
 import static java.util.Objects.isNull;
 
 @RequiredArgsConstructor
 public class BoardColumnDAO {
+
+    private final Connection connection;
 
     public BoardColumnEntity insert(final BoardColumnEntity entity) throws SQLException {
         var sql = "INSERT INTO BOARDS_COLUMNS (name, `order`, kind, board_id) VALUES (?, ?, ?, ?);";
