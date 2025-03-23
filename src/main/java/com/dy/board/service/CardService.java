@@ -1,6 +1,9 @@
 package com.dy.board.service;
 
 import com.dy.board.dto.BoardColumnInfoDTO;
+import com.dy.board.exception.CardBlockedException;
+import com.dy.board.exception.CardFinishedException;
+import com.dy.board.exception.EntityNotFoundException;
 import com.dy.board.persistence.dao.BlockDAO;
 import com.dy.board.persistence.dao.CardDAO;
 import com.dy.board.persistence.entity.CardEntity;

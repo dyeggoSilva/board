@@ -9,8 +9,9 @@ import java.sql.Connection;
 import java.sql.SQLException;
 import java.util.Optional;
 
+import static com.dy.board.persistence.converter.OffsetDateTimeConverter.toOffsetDateTime;
 import static java.util.Objects.nonNull;
-import static org.apache.commons.lang3.time.CalendarUtils.toOffsetDateTime;
+
 
 @AllArgsConstructor
 public class CardDAO {

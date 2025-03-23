@@ -7,6 +7,8 @@ import java.sql.SQLException;
 import java.sql.Timestamp;
 import java.time.OffsetDateTime;
 
+import static com.dy.board.persistence.converter.OffsetDateTimeConverter.toTimestamp;
+
 @AllArgsConstructor
 public class BlockDAO {
 
